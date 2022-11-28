@@ -1,0 +1,14 @@
+model_version: "0.0.1"
+build:
+  gpu: true
+  system_packages:
+    - "libgl1-mesa-glx"
+    - "libglib2.0-0"
+  python_version: "3.8"
+  python_packages:
+    - "deepface==0.0.75"
+    - "requests==2.28.1"
+predict: "predictor.py:EmotionDetector"
+model_name: "emotion-detector"
+private: true
+iteration: "video
