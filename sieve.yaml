@@ -6,9 +6,12 @@ build:
     - "libglib2.0-0"
   python_version: "3.8"
   python_packages:
-    - "deepface==0.0.75"
     - "requests==2.28.1"
-predict: "predictor.py:EmotionDetector"
-model_name: "emotion-detector"
+    - "torch==1.8.1"
+    - "fastai==2.7.9"
+    - "scikit-image==0.19.3"
+    - "opencv_python_headless==4.5.5.64"
+predict: "predictor.py:EmotionPredictor"
+model_name: "emotion-detector2"
 private: true
-iteration: "video
+iteration: "objects"
